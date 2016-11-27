@@ -18,7 +18,7 @@
     function onEachFeature(feature, layer) {
       // does this feature have a property named popupContent?
       if (feature.properties && feature.properties.title) {
-      	var popuphtml = "<strong>" + feature.properties.title + "</strong><ul><li>Notes: " + feature.properties.notes + "</li><li>Property 3: " + feature.properties.property3 + "</li></ul>";
+      	var popuphtml = "<strong>" + feature.properties.title + "</strong><ul><li>Height of Falls: " + feature.properties.notes + "</li><li>Distance from Road: " + feature.properties.property3 + "</li></ul>";
         layer.bindPopup(popuphtml);
       }
     }
@@ -51,7 +51,8 @@
       }).addTo(map);
 
 //      map.locate({setView: true, maxZoom: 16});
-
+       console.log(geoJsonData);
+       window.geoJsonData = geoJsonData
       L.geoJson(geoJsonData, {
         onEachFeature: onEachFeature
       }).addTo(map);

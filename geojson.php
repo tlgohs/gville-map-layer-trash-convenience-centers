@@ -1,7 +1,7 @@
 <?php
 // kudos to http://stackoverflow.com/a/18106727/1778785 for snippet of PHP to read Google spreadsheet as CSV
 
-$googleSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/1jJC1-pRe4Dm1yxPIQ_u4FJ4ND8YIftztaBbVl7nxaS4/pub?output=csv";
+$googleSpreadsheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRdLwUz7kzQeFa_SaaRzyryBSJO-NSg9XiIRdYCNUmTMHY52MopNcYO_7pnaTNoMmr_DBVJCO9n9uwI/pub?output=csv";
 
 $rowCount = 0;
 $features = array();
